@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>Gerador de História</title>
+
+    <style>
+      body {
+        font-family: helvetica, sans-serif;
+        background: #00458b;
+        color: aliceblue;
+        font-size: 24px;
+        font-family: Trebuchet MS, sans-serif;
+      }
+
+      label {
+        font-weight: bold;  
+      }
+
+      input[type="text"] {
+        padding: 5px;
+        font-family: helvetica, sans-serif;
+        font-size: 16px;
+        outline: none;
+      }
+
+      #container{
+        width: 50%;
+        max-width: 800px;
+        min-width: 480px;
+        margin: 0 auto;
+        border: 1px solid #1e7f9d;
+        padding: 12px;   
+      }
+
+      p {
+          background: #2558ff51;
+          color: #ffffff;
+          padding: 10px;
+          visibility: hidden;
+      }
+
+      button{
+          border-radius: 15px;
+          border: none;
+          outline: none;
+          color: white;
+          padding: 15px;
+
+          font-size: 24px;
+
+          cursor: pointer;
+
+          background-color: rgb(42, 74, 216);
+      }
+    </style>
+  </head>
+
+  <body>
+      <div id="container">
+        <div>
+            <label for="nomePersonalizado">Inserir nome personalizado:</label>
+            <input id="nomePersonalizado" type="text" placeholder="Digite um nome aqui!">
+          </div>
+          <div>
+            <label for="us">US</label><input id="us" type="radio" name="ukus" value="us" checked>
+            <label for="uk">UK</label><input id="uk" type="radio" name="ukus" value="uk">
+          </div>
+          <div>
+            <button class="botaoGerarHistoria">Gerar história aleatória</button>
+          </div>
+          
+          <p class="historia"></p>
+      </div>
+    </div>
+    <script src="main.js"></script>
+
+    
+  </body>
+</html>
